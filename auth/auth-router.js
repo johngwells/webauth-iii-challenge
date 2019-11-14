@@ -43,7 +43,7 @@ function generateToken(user) {
     username: user.username
   };
   const options = {
-    expiresIn = '8h'
+    expiresIn: '8h'
   };
 
   return jwt.sign(payload, secrets.jwtSecret, options);
